@@ -1,1 +1,162 @@
-<h1>Welcome</h1>
+<!-- FILEPATH: /Users/Roger/open/lightbit.dev/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>LightBit.Dev</title>
+    <style>
+      /* 居中显示 */
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(315deg, #000000 0%, #1b2735 25%, #00EB6F 45%, #00B0FD 55%, #090a0f 75%, #000000 100%);
+        animation: gradient 20s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+      /* logo样式 */
+      .logo {
+        width: 96px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* 名称样式 */
+      .name {
+        font-size: 3rem;
+        color: #fff;
+        margin-top: 20px;
+      }
+      /* 动画背景 */
+      .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: table;
+      }
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, #FFFFFF00 0%, #00EB6F 40%, #00B0FD 60%, #FFFFFF00 100%);
+  -webkit-animation: drop 7s 0s infinite;
+          animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1) {
+  margin-left: -40%;
+}
+.line:nth-child(1)::after {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.line:nth-child(2) {
+  margin-left: -20%;
+}
+.line:nth-child(2)::after {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.line:nth-child(3) {
+  margin-left: 0%;
+}
+.line:nth-child(3)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.line:nth-child(4) {
+  margin-left: 20%;
+}
+.line:nth-child(4)::after {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.line:nth-child(5) {
+  margin-left: 40%;
+}
+.line:nth-child(5)::after {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>    
+    </div>
+    <div class="logo"><img src="lightbit.png" alt="LightBit"></div>
+    <div class="name">LIGHTBIT</div>
+  </body>
+</html>
