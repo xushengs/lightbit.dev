@@ -48,107 +48,116 @@
         display: table;
       }
 
-.lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  margin: auto;
-  width: 90vw;
-}
+      .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        margin: auto;
+        width: 90vw;
+      }
 
-.line {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-}
-.line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
-  width: 100%;
-  top: -50%;
-  left: 0;
-  background: linear-gradient(to bottom, #FFFFFF00 0%, #00EB6F 40%, #00B0FD 60%, #FFFFFF00 100%);
-  -webkit-animation: drop 7s 0s infinite;
-          animation: drop 7s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
-.line:nth-child(1) {
-  margin-left: -40%;
-}
-.line:nth-child(1)::after {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-.line:nth-child(2) {
-  margin-left: -20%;
-}
-.line:nth-child(2)::after {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.line:nth-child(3) {
-  margin-left: 0%;
-}
-.line:nth-child(3)::after {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.line:nth-child(4) {
-  margin-left: 20%;
-}
-.line:nth-child(4)::after {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.line:nth-child(5) {
-  margin-left: 40%;
-}
-.line:nth-child(5)::after {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
+      .line {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+      }
+      .line::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 15vh;
+        width: 100%;
+        top: -50%;
+        left: 0;
+        background: linear-gradient(to bottom, #FFFFFF00 0%, #00EB6F 40%, #00B0FD 60%, #FFFFFF00 100%);
+        -webkit-animation: drop 7s 0s infinite;
+                animation: drop 7s 0s infinite;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+                animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+      }
+      .line:nth-child(1) {
+        margin-left: -40%;
+      }
+      .line:nth-child(1)::after {
+        -webkit-animation-delay: 5s;
+                animation-delay: 5s;
+      }
+      .line:nth-child(2) {
+        margin-left: -20%;
+      }
+      .line:nth-child(2)::after {
+        -webkit-animation-delay: 3s;
+                animation-delay: 3s;
+      }
+      .line:nth-child(3) {
+        margin-left: 0%;
+      }
+      .line:nth-child(3)::after {
+        -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+      }
+      .line:nth-child(4) {
+        margin-left: 20%;
+      }
+      .line:nth-child(4)::after {
+        -webkit-animation-delay: 4s;
+                animation-delay: 4s;
+      }
+      .line:nth-child(5) {
+        margin-left: 40%;
+      }
+      .line:nth-child(5)::after {
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+      }
 
-@-webkit-keyframes drop {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-}
+      @-webkit-keyframes drop {
+        0% {
+          top: -50%;
+        }
+        100% {
+          top: 110%;
+        }
+      }
 
-@keyframes drop {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-}
+      @keyframes drop {
+        0% {
+          top: -50%;
+        }
+        100% {
+          top: 110%;
+        }
+      }
 
-@keyframes gradient {
-  0% {
-      background-position: 0% 0%;
-  }
-  50% {
-      background-position: 100% 100%;
-  }
-  100% {
-      background-position: 0% 0%;
-  }
-}
+      @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+      }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70EDL2VEHL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-70EDL2VEHL');
+    </script>
   </head>
   <body>
     <div class="background">
